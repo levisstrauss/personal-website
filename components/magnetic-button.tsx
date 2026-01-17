@@ -10,9 +10,12 @@ interface MagneticButtonProps {
   href?: string
   onClick?: () => void
   strength?: number
+  target?: string
+  rel?: string
+  download?: string
 }
 
-export function MagneticButton({ children, className = "", href, onClick, strength = 0.4 }: MagneticButtonProps) {
+export function MagneticButton({ children, className = "", href, onClick, strength = 0.4, target, rel, download}: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
@@ -46,6 +49,9 @@ export function MagneticButton({ children, className = "", href, onClick, streng
       <Component
         href={href}
         onClick={onClick}
+        target={href ? target : undefined}
+        rel={href ? rel : undefined}
+        download={href ? download : undefined}
         className={className}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}

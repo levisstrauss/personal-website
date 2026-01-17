@@ -2,61 +2,9 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Code, Brain, Globe, Cloud, Database, Terminal } from "lucide-react"
 
-const skillCategories = [
-  {
-    id: "programming",
-    title: "Programming Languages",
-    icon: Code,
-    description: "Core languages I use daily for building robust applications",
-    skills: ["Python", "TypeScript", "JavaScript", "Java", "C++", "SQL", "Go", "Rust"],
-  },
-  {
-    id: "aiml",
-    title: "AI & Machine Learning",
-    icon: Brain,
-    description: "Frameworks and tools for building intelligent systems",
-    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face", "LangChain", "OpenCV", "NLTK", "Keras"],
-  },
-  {
-    id: "web",
-    title: "Web Development",
-    icon: Globe,
-    description: "Modern frameworks for building exceptional user experiences",
-    skills: ["React", "Next.js", "Node.js", "FastAPI", "Django", "Tailwind CSS", "GraphQL", "REST APIs"],
-  },
-  {
-    id: "cloud",
-    title: "Cloud & DevOps",
-    icon: Cloud,
-    description: "Infrastructure and deployment at scale",
-    skills: ["AWS", "GCP", "Docker", "Kubernetes", "CI/CD", "Terraform", "Linux", "Nginx"],
-  },
-  {
-    id: "databases",
-    title: "Databases",
-    icon: Database,
-    description: "Data storage and management solutions",
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch", "Supabase", "Pinecone", "MySQL", "DynamoDB"],
-  },
-  {
-    id: "tools",
-    title: "Tools & Practices",
-    icon: Terminal,
-    description: "Development tools and best practices",
-    skills: [
-      "Git",
-      "Agile",
-      "System Design",
-      "Testing",
-      "Documentation",
-      "Code Review",
-      "Performance Optimization",
-      "Security",
-    ],
-  },
-]
+import { skillCategories } from "@/lib/data"
+
 
 export function SkillsSection() {
   const ref = useRef(null)

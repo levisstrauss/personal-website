@@ -57,7 +57,6 @@ export function HeroSection() {
               Welcome to my portfolio
             </motion.p>
 
-            {/* Name - FIXED LCP: Removed opacity: 0 from initial state so text shows instantly */}
             <motion.h1
                 initial={{ opacity: 1, y: 0 }}
                 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
@@ -121,6 +120,9 @@ export function HeroSection() {
               </MagneticButton>
               <MagneticButton
                   href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Zakaria_Coulibaly_resume.pdf"
                   className="px-8 py-4 glass border border-border/50 dark:border-white/10 text-foreground font-semibold rounded-lg hover:border-primary/50 transition-colors flex items-center gap-2"
               >
                 <Download size={18} />
@@ -144,6 +146,8 @@ export function HeroSection() {
                       key={label}
                       href={href}
                       aria-label={label}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-3 rounded-full glass text-foreground/60 dark:text-muted-foreground hover:text-primary transition-colors"
                   >
                     <Icon size={22} />

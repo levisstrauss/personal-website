@@ -120,10 +120,10 @@ export function ExperienceSection() {
                       <Calendar size={14} className="text-primary" />
                       {activeExp.period}
                     </span>
-                    <span className="flex items-center gap-2">
-                      <MapPin size={14} className="text-primary" />
-                      Remote / On-site
-                    </span>
+                    {/*<span className="flex items-center gap-2">*/}
+                    {/*  <MapPin size={14} className="text-primary" />*/}
+                    {/*  Remote / On-site*/}
+                    {/*</span>*/}
                   </div>
                 </div>
 

@@ -10,7 +10,7 @@ import { ShareButtons } from "@/components/share-buttons"
 const categories = [
   { id: "all", label: "All", icon: Layers },
   { id: "ai", label: "AI / ML", icon: Brain },
-  { id: "web", label: "Web", icon: Globe },
+  { id: "mlops", label: "Mlops", icon: Globe },
   { id: "fullstack", label: "Full Stack", icon: Sparkles },
 ]
 
@@ -203,7 +203,7 @@ export function ProjectsSection() {
               exit={{ opacity: 0 }}
               className="text-center py-16"
             >
-              <p className="text-foreground/60 dark:text-muted-foreground">No projects found in this category.</p>
+              <p className="text-foreground/60 dark:text-muted-foreground">Coming Soon...</p>
             </motion.div>
           )}
         </AnimatePresence>

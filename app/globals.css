@@ -196,21 +196,21 @@
   text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
 }
 
-/* Hide default cursor on desktop for custom cursor */
-@media (min-width: 768px) {
-  body {
-    cursor: auto !important;
-  }
+/*!* Hide default cursor on desktop for custom cursor *!*/
+/*@media (min-width: 768px) {*/
+/*  !*body {*!*/
+/*  !*  cursor: auto !important;*!*/
+/*  !*}*!*/
 
-  a,
-  button,
-  [role="button"],
-  input,
-  textarea,
-  select {
-    cursor: auto !important;
-  }
-}
+/*  a,*/
+/*  button,*/
+/*  [role="button"],*/
+/*  input,*/
+/*  textarea,*/
+/*  select {*/
+/*    cursor: auto;*/
+/*  }*/
+/*}*/
 
 /* Smooth scroll behavior */
 html {
