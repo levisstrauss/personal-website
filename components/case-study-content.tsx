@@ -13,7 +13,7 @@ interface Project {
   github?: string
   demo?: string
   category: string
-  stats?: { stars: number; forks: number }
+  stats: { stars: number; forks: number }
   year: string
   duration: string
   team: string
