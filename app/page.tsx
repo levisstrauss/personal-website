@@ -11,8 +11,7 @@ import { Preloader } from "@/components/preloader"
 import { AvailabilityBadge } from "@/components/availability-badge"
 import { BackToTop } from "@/components/back-to-top"
 import { CertificationsSection } from "@/components/certifications-section"
-import { SnowEffect } from "@/components/snow-effect"
-import { CustomCursor } from "@/components/custom-cursor"
+
 
 export default function Home() {
     return (
